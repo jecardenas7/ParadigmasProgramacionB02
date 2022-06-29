@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController">
+   <children>
+      <SplitPane dividerPositions="0.7611710323574731" layoutY="-1.0" prefHeight="655.0" prefWidth="1300.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="653.0" prefWidth="664.0">
+               <children>
+                  <ImageView fitHeight="653.0" fitWidth="1140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/Fondo.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="Bienvenido" editable="false" layoutX="179.0" layoutY="7.0" prefHeight="51.0" prefWidth="628.0" scrollLeft="10.0" scrollTop="10.0" text="Bienvenid@ a mi tienda, yo soy Ana!  ¿Qué deseas comprar?" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="31.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="627.0" fitWidth="458.0" layoutX="-39.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/AnaGrande2.png" />
+                     </image>
+                  </ImageView>
+                  <GridPane layoutX="304.0" layoutY="108.0" prefHeight="479.0" prefWidth="658.0" style="-fx-background-color: #FFFFFF;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Pan2.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="170.0" prefWidth="172.0">
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="122.0" text="Pan Bimbo" />
+                                    <HBox alignment="CENTER" prefHeight="39.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="48.0" text="Precio" textAlignment="RIGHT" />
+                                          <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="6500" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="61.0" text="Cantidad" />
+                                          <ChoiceBox fx:id="btnCantPan" prefHeight="25.0" prefWidth="61.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ChoiceBox>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" text="Seleccionar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Leche.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="170.0" prefWidth="172.0">
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="122.0" text="1 litro Leche Entera Alquería" />
+                                    <HBox alignment="CENTER" prefHeight="39.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="48.0" text="Precio" textAlignment="RIGHT" />
+                                          <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="5200" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="61.0" text="Cantidad" />
+                                          <ChoiceBox fx:id="btnCantLeche" prefHeight="25.0" prefWidth="61.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ChoiceBox>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" text="Seleccionar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="180.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Jugo.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="170.0" prefWidth="172.0">
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="145.0" text="Jugo Hit Natural 1 Litro" />
+                                    <HBox alignment="CENTER" prefHeight="39.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="48.0" text="Precio" textAlignment="RIGHT" />
+                                          <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="4900" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="61.0" text="Cantidad" />
+                                          <ChoiceBox fx:id="btnCantJugo" prefHeight="25.0" prefWidth="61.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ChoiceBox>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" text="Seleccionar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="349.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Gomitas.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="170.0" prefWidth="172.0">
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="122.0" text="Gomitas Gusanos Trululu" />
+                                    <HBox alignment="CENTER" prefHeight="39.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="48.0" text="Precio" textAlignment="RIGHT" />
+                                          <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="2500" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="61.0" text="Cantidad" />
+                                          <ChoiceBox fx:id="btnCantGomas" prefHeight="25.0" prefWidth="61.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ChoiceBox>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" text="Seleccionar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="339.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Cubeta%20huevos.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="170.0" prefWidth="172.0">
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="122.0" text="Cubeta de Huevos" />
+                                    <HBox alignment="CENTER" prefHeight="39.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="48.0" text="Precio" textAlignment="RIGHT" />
+                                          <TextField alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="60.0" text="17300" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="172.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="61.0" text="Cantidad" />
+                                          <ChoiceBox fx:id="btnCantHuevos" prefHeight="25.0" prefWidth="61.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ChoiceBox>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" text="Seleccionar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #B5B2B2;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <VBox prefHeight="169.0" prefWidth="188.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="164.0" text="Productos Seleccionados" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField alignment="CENTER" editable="false" text="Pan" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="27.0" text="Gomitas" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="52.0" text="Leche" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="77.0" text="Huevos" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="102.0" text="Jugo" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="127.0" text="TOTAL">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </HBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </VBox>
+                              <VBox prefHeight="169.0" prefWidth="106.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="164.0" text="Cantidad" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField alignment="CENTER" editable="false" text="1" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="27.0" text="0" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="52.0" text="0" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="77.0" text="1" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="102.0" text="0" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="127.0" text="2">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox layoutX="172.0" layoutY="10.0" prefHeight="169.0" prefWidth="131.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="164.0" text="Valor Total" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField alignment="CENTER" editable="false" text="6500" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="27.0" text="0" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="52.0" text="0" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="77.0" text="17300" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="102.0" text="0" />
+                                    <TextField alignment="CENTER" editable="false" layoutX="10.0" layoutY="127.0" text="23800">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <Button layoutX="547.0" layoutY="599.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="172.0" text="PAGAR">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="653.0" prefWidth="833.0">
+               <children>
+                  <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="653.0" prefWidth="307.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="95.0" prefWidth="307.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="85.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/50pesos.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="80.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/2mil.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="83.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/100pesos.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/5mil.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="79.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/200pesos.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/10mil.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="79.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/500pesos.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/20mil.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="460.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="84.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/Milpesos.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Downloads/50mil.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField prefHeight="27.0" prefWidth="142.0" text="Total Seleccionado:">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextField alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="142.0" text="24000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
